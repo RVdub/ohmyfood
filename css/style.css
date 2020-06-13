@@ -1,0 +1,273 @@
+/*reset*/
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+  
+html {
+    font-size: 62.5%;
+    font-size: calc(1em * .625); /* IE9-IE11 math fixing */
+}
+    
+body {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+strong {
+    font-size: 1.5em;
+}
+
+/*page index*/  
+header {
+    font-size: 3em;
+    color: rgb(253, 203, 70);
+    background-color: rgb(87,156,135);
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(253, 203, 70);
+}
+  
+main {
+    margin: 8em 10em 10em 10em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6em;
+    row-gap: 6em;
+    grid-auto-rows: 70em;
+}
+
+@media screen and (max-width: 700px) {
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nav__enchante {
+    padding-top: 5em;
+    font-size: 4em; 
+    background-color: rgb(252, 223, 219);
+    box-shadow: 0 0 .5em rgb(200, 200, 200);
+}
+
+ul li i {
+    /*gradient icon*/
+    font-size: 1.7em;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(240,74,94)), to(rgb(247,143,106)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav__enchante--heading {
+    font-family: 'Devonshire', cursive;
+    color: rgb(60,18,24);
+}
+
+.nav__enchante--byline {
+    font-family: 'Sriracha', cursive;
+    font-size: 1.4em; 
+    color: rgb(60,18,24);
+    padding-top: .3em;
+}
+
+.nav__francais {
+    padding-top: 5.5em;
+    font-size: 4em;
+    background-color: rgb(255, 245, 254);
+    box-shadow: 0 0 .5em rgb(200, 200, 200);
+}
+
+.nav__francais--heading {
+    font-family: 'Redressed', cursive;
+    font-size: 1em;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(216,133,46)), to(rgb(144,91,253)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav__francais--byline {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.3em;
+    padding-top: .5em;
+    color: rgb(199, 116, 18)
+}
+
+.nav__papilles {
+    padding-top: 6em;
+    font-size: 4em;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0 0 .5em rgb(200, 200, 200);
+}
+
+.nav__papilles--heading {
+    font-family: 'Dancing Script', cursive;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(4,49,223)), to(rgb(8, 135, 251)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav__papilles--byline {
+    font-family: 'Handlee', cursive;
+    font-size: 1.3em;
+    padding-top: .5em;
+    color: rgb(8, 135, 251);
+}
+
+.nav__gout {
+    padding-top: 6em;
+    font-size: 4em;
+    background-color: rgb(253, 255, 253);
+    box-shadow: 0 0 .5em rgb(200, 200, 200);
+}
+
+.nav__gout--heading {
+    font-family: 'Kaushan Script', cursive;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(66,151,60)), to(rgb(191,255,126)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav__gout--byline {
+    font-family: 'Handlee', cursive;
+    font-size: 1.3em;
+    padding-top: .5em;
+    color: rgb(114, 191, 86)
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: 0;
+    margin-top: 3em;
+    padding: .5em 0;
+    font-size: 3em;
+    letter-spacing: 3px;
+    color: rgb(253, 203, 70);
+    background-color: rgb(87,156,135);
+    border-radius: .5em;
+    min-width: 60%;
+}
+
+@media screen and (max-width: 700px) {
+    button {
+        letter-spacing: 0px;
+        font-size: 2em;
+    }
+}
+
+footer {  
+    font-size: 2.5em;
+    color: rgb(253, 203, 70);
+    background-color: rgb(87,156,135);
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*pages menu*/
+
+figcaption {
+    font-size: 4em;
+    color: black;
+    padding-bottom: 1em;
+}
+
+.carte-menu-enchantee {
+    justify-content: center;
+    background-color: rgb(252, 223, 219);
+    box-shadow: 0 0 1.5em rgb(200, 200, 200);
+    margin: auto;
+}
+
+.carte-menu-enchantee i {
+    /*gradient icon*/
+    font-size: 1.7em;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(240,74,94)), to(rgb(247,143,106)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.carte-enchantee--heading {
+    font-family: 'Devonshire', cursive;
+    color: rgb(60,18,24);
+    font-size: 5em;
+    padding-top: 2em;
+}
+
+.corpus {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-family: 'Itim', cursive;
+    color: rgb(60,18,24);
+}
+
+@media screen and (max-width: 400px) {
+    .corpus {
+        font-size: 1em;
+    }
+}
+
+.corpus__menu {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.corpus__heading {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.corpus__heading img {
+    padding-top: .3em;
+    max-width : 100%;
+    height: auto;
+}
+
+.corpus__menu em {
+    font-weight: bold;
+}
+
+.corpus__line {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+.carte-enchantee--footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 4em;
+    font-family: 'Devonshire', cursive;
+}
+
+p+i+em {
+    color: rgb(60,18,24);
+}
+

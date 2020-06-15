@@ -54,7 +54,7 @@ nav ul {
     }
 }
 
-.nav__enchante {
+.nav__enchantee {
     padding-top: 5em;
     font-size: 4em; 
     background-color: rgb(252, 223, 219);
@@ -69,12 +69,12 @@ ul li i {
     -webkit-text-fill-color: transparent;
 }
 
-.nav__enchante--heading {
+.nav__enchantee--heading {
     font-family: 'Devonshire', cursive;
     color: rgb(60,18,24);
 }
 
-.nav__enchante--byline {
+.nav__enchantee--byline {
     font-family: 'Sriracha', cursive;
     font-size: 1.4em; 
     color: rgb(60,18,24);
@@ -91,7 +91,7 @@ ul li i {
 .nav__francais--heading {
     font-family: 'Redressed', cursive;
     font-size: 1em;
-    background: -webkit-gradient(linear, left top, right top, from(rgb(216,133,46)), to(rgb(144,91,253)));
+    background: -webkit-gradient(linear, left top, right bottom, from(rgb(227,138,18)), to(rgb(143,90,255)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -100,13 +100,13 @@ ul li i {
     font-family: 'Noto Serif', serif;
     font-size: 1.3em;
     padding-top: .5em;
-    color: rgb(199, 116, 18)
+    color: rgb(227, 138, 18)
 }
 
 .nav__papilles {
     padding-top: 6em;
     font-size: 4em;
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(237, 239, 239);
     box-shadow: 0 0 .5em rgb(200, 200, 200);
 }
 
@@ -193,14 +193,13 @@ figcaption {
     padding-bottom: 1em;
 }
 
-.carte-menu-enchantee {
-    justify-content: center;
+.cartemenu--enchantee {
     background-color: rgb(252, 223, 219);
     box-shadow: 0 0 1.5em rgb(200, 200, 200);
     margin: auto;
 }
 
-.carte-menu-enchantee i {
+.cartemenu--enchantee i {
     /*gradient icon*/
     font-size: 1.7em;
     background: -webkit-gradient(linear, left top, right top, from(rgb(240,74,94)), to(rgb(247,143,106)));
@@ -208,19 +207,65 @@ figcaption {
     -webkit-text-fill-color: transparent;
 }
 
-.carte-enchantee--heading {
+.cartemenu--francais {
+    background-color: rgb(255, 245, 254);
+    box-shadow: 0 0 1.5em rgb(200, 200, 200);
+    margin: auto;
+}
+
+.cartemenu--papilles {
+    background-color: rgb(237, 239, 239);
+    box-shadow: 0 0 1.5em rgb(200, 200, 200);
+    margin: auto;
+}
+
+.cartemenu--gout {
+    background-color: rgb(253, 255, 253);
+    box-shadow: 0 0 1.5em rgb(200, 200, 200);
+    margin: auto;
+}
+
+.carte__heading--enchantee {
     font-family: 'Devonshire', cursive;
     color: rgb(60,18,24);
     font-size: 5em;
     padding-top: 2em;
 }
 
+.carte__heading--francais {
+    font-family: 'Redressed', cursive;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgb(227,138,18)), to(rgb(143,90,255)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 7em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.carte__heading--papilles {
+    font-family: 'Dancing Script', cursive;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(4,49,223)), to(rgb(8, 135, 251)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 10em;
+    padding-top: 1em;
+    padding-bottom: .3em;
+}
+
+.carte__heading--gout {
+    font-family: 'Kaushan Script', cursive;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(66,151,60)), to(rgb(191,255,126)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 10em;
+    padding-top: 1em;
+    padding-bottom: .3em;
+}
+
 .corpus {
     display: flex;
     justify-content: center;
     font-size: 2em;
-    font-family: 'Itim', cursive;
-    color: rgb(60,18,24);
 }
 
 @media screen and (max-width: 400px) {
@@ -229,19 +274,68 @@ figcaption {
     }
 }
 
+.corpus--enchantee {
+    font-family: 'Itim', cursive;
+    color: rgb(60,18,24);
+}
+
+.corpus--papilles {
+    font-family: 'Itim', cursive;
+    color: black;
+}
+
+.corpus--gout {
+    font-family: 'Itim', cursive;
+    color: black;
+}
+
 .corpus__menu {
     display: flex;
     flex-direction: column;
-    width: 80%;
+}
+
+.corpus__menu--color1 {
+    color: rgb(198,116,18);
+}
+
+.corpus__menu--color2 {
+    color: rgb(165,103,153);
+}
+
+.corpus__menu--color3 {
+    color: rgb(110,76,204);
 }
 
 .corpus__heading {
-    padding-top: 2em;
+    padding-top: 2em;  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.corpus__heading--enchantee {
     padding-bottom: 1em;
     font-weight: bold;
     font-size: 1.5em;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+}
+
+.corpus__heading--francais {
+    padding-bottom: 1.5em;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.corpus__heading--papilles {
+    padding-bottom: 1.5em;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.corpus__heading--gout {
+    padding-bottom: 1.5em;
+    font-weight: normal;
+    font-size: 1.5em;
+    padding-right: 2em;
+    padding-left: 2em;
 }
 
 .corpus__heading img {
@@ -250,20 +344,55 @@ figcaption {
     height: auto;
 }
 
-.corpus__menu em {
-    font-weight: bold;
-}
-
 .corpus__line {
     display: flex;
     justify-content: space-between;
     padding-bottom: 1em;
 }
 
-.carte-enchantee--footer {
+.corpus__line em {
+    font-weight: bold;
+}
+
+.corpus__line--francais {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.corpus__line--francais em {
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.corpus__line--papilles {
+    padding-left: 4em;
+    padding-right: 4em;
+    font-size: 1.2em;
+}
+
+.corpus__line--papilles em {
+    font-weight: normal;
+    font-size: 1.4em;
+}
+
+.corpus__line--gout {
+    padding-left: 6em;
+    padding-right: 6em;
+    font-size: 1.2em;
+}
+
+.corpus__line--gout em {
+    font-weight: normal;
+    font-size: 1.4em;
+}
+
+.carte__footer {
+    font-size: 4em;
     padding-top: 2em;
     padding-bottom: 2em;
-    font-size: 4em;
+}
+
+.carte__footer--enchantee {
     font-family: 'Devonshire', cursive;
 }
 

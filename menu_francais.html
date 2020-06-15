@@ -9,7 +9,7 @@
     <meta name="description" content="Entreprise de réservation de restaurants et de composition de menus en ligne." />
 
     <!--feuille de style spécifique-->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/ede5d7db23.js" crossorigin="anonymous"></script>
@@ -17,50 +17,107 @@
     <!--favicon-->
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
+    <!--Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Devonshire&family=Handlee&family=Kaushan+Script&family=Noto+Serif:wght@700&family=Redressed&family=Roboto:wght@700&family=Sriracha&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-
-    <main class="container">
+    <div class="container">
         <header>
-            <h1>ohmyfood</h1>
+            <a href="./index.html">
+                <h1>ohmyfood</h1>
+            </a>
         </header>
 
-        <section>
-            <caption>Le chic à la française</caption>
-            <div>
-                <p>Le chic à la française</p>
+        <main>
+            <section>
+                <figcaption>Le chic à la française</figcaption>
+                <div class="cartemenu--francais">
+                    <div class="carte__heading--francais">
+                        <p>Le chic à la française</p>
+                    </div>
+                    <div class="corpus">
+                        <div class="corpus__menu">
+                            <div class="corpus__menu--color1">
+                                <div class="corpus__heading corpus__heading--francais">
+                                    <img src="./img/francais_first_left_divider.png" alt="" />
+                                    <span>Pour se mettre en appétit</span>
+                                    <img src="./img/francais_first_right_divider.png" alt="" />
+                                </div>
+                                <div class="corpus__line corpus__line--francais">
+                                    <p>Tartare de poulpe acidulé aux zests d'orange</p>
+                                    <p><em>79€</em></p>
+                                </div>
+                                <div class="corpus__line corpus__line--francais">
+                                    <p>Velouté de légumes d'antan</p>
+                                    <p><em>57€</em></p>
+                                </div>
+                                <div class="corpus__line corpus__line--francais">
+                                    <p>Soupe à l'oignon revisitée</p>
+                                    <p><em>57€</em></p>
+                                </div>
+                            </div>
 
-                <div>Pour se mettre en appétit</div>
-                <p>Tartare de poulpe acidulé aux zests d'orange</p><p>79€</p>
-                <p>Velouté de légumes d'antan</p><p>57€</p>
-                <p>Soupe à l'oignon revisitée</p><p>57€</p>
-                                
-                <div>Plaisir des papilles</div>
-                <p>Coquilles Saint-Jacques accompagnées d'une purée de panais</p><p>95€</p>
-                <p>Magret de canard et parmentier de pommes de terres</p><p>88€</p>
-                <p>Pigonneau d'Ile et Vilaine sur son lit de gnocchis aux légumes</p><p>175€</p>
+                            <div class="corpus__menu--color2">
+                                <div class="corpus__heading corpus__heading--francais">
+                                    <img src="./img/francais_second_left_divider.png" alt="" />
+                                    <span>Plaisir des papilles</span>
+                                    <img src="./img/francais_second_right_divider.png" alt="" />
+                                </div>
+                                <div class="corpus__line corpus__line--francais">
+                                    <p>Coquilles Saint-Jacques accompagnées d'une purée de panais</p>
+                                    <p><em>95€</em></p>
+                                </div>
+                                <div class="corpus__line corpus__line--francais">
+                                    <p>Magret de canard et parmentier de pommes de terre</p>
+                                    <p><em>88€</em></p>
+                                </div>
+                                <div class="corpus__line corpus__line--francais">
+                                    <p>Pigonneau d'Ile et Vilaine sur son lit de gnocchis aux légumes</p>
+                                    <p><em>175€</em></p>
+                                </div>
+                            </div>
 
-                <div>Gourmandises sucrées</div>
-                <p>Pétales de violettes glacés et purée de noisettes</p>
-                <p>Fondant au chocolat revisité</p>
-                <p>Millefeuille croustillant</p>
+                            <div class="corpus__menu--color3">
+                                <div class="corpus__heading corpus__heading--francais">
+                                    <img src="./img/francais_third_left_divider.png" alt="" />
+                                    <span>Gourmandises sucrées</span>
+                                    <img src="./img/francais_third_right_divider.png" alt="" />
+                                </div>
+                                <div class="corpus__line corpus__line--francais">
+                                    <p>Pétales de violettes glacés et purée de noisettes</p>
+                                </div>
+                                <div class="corpus__line corpus__line--francais">
+                                    <p>Fondant au chocolat revisité</p>
+                                </div>
+                                <div class="corpus__line corpus__line--francais">
+                                    <p>Millefeuille croustillant</p>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+                    <div class="carte__footer">
+                        <p></p>
+                    </div>
                 </div>
-
-        </section>
-
-
+            </section>
+        </main>
 
         <footer>
-            <div class="footer__mentions">Mentions légales</div>
+            <div class="footer__mentions">
+                <a href="./mentions_legales.html">Mentions légales</a>
+            </div>
             <div class="footer__contact">
-                <Contactez-nous>Contactez-nous</Contactez-nous>
+                <a href="mailto:dhcontrole@gmail.com">Contactez-nous</a>
             </div>
         </footer>
 
-
-    </main>
+    </div>
 
 </body>
 

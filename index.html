@@ -24,59 +24,61 @@
 
 </head>
 
-<body>
-    <div class="container">
-        <header>
-            <a href="./index.html">
-                <h1>ohmyfood</h1>
+<body class="page">
+    <div class="page__wrapper">
+        <header class="header">
+            <a href="./index.html" class="header__link">
+                <h1 class="header__logo">ohmyfood</h1>
             </a>
         </header>
 
-        <main>
-            <nav>
-                <ul>
-                    <li class="nav__enchantee">
-                        <a href="./menu_enchantee.html">
-                            <i class="fas fa-music"></i>
-                            <p class="nav__enchantee--heading">La note enchantée</p>
-                            <p class="nav__enchantee--byline">MENU</p>
+        <main class="main">
+            <nav class="main__nav">
+                <ul class="menu">
+                    <li class="menu__enchantee">
+                        <a href="./enchantee.html" class="menu__link">
+                            <i class="fas fa-music" class="menu__enchantee--icon"></i>
+                            <p class="menu__enchantee-heading">La note enchantée</p>
+                            <p class="menu__enchantee-byline">MENU</p>
                         </a>
                     </li>
-                    <li class="nav__francais">
-                        <a href="./menu_francais.html">
-                            <p class="nav__francais--heading">Le chic à la française</p>
-                            <p class="nav__francais--byline">Menu</p>
+                    <li class="menu__francaise">
+                        <a href="./francaise.html" class="menu__link">
+                            <p class="menu__francais-heading">Le chic à la française</p>
+                            <p class="menu__francais-byline">Menu</p>
                         </a>
                     </li>
-                    <li class="nav__papilles">
-                        <a href="./menu_papilles.html">
-                            <p class="nav__papilles--heading">Le délice des papilles</p>
-                            <p class="nav__papilles--byline">Menu</p>
+                    <li class="menu__papilles">
+                        <a href="./papilles.html" class="menu__link">
+                            <p class="menu__papilles-heading">Le délice des papilles</p>
+                            <p class="menu__papilles-byline">Menu</p>
                         </a>
                     </li>
-                    <li class="nav__gout">
-                        <a href="./menu_gout.html">
-                            <p class="nav__gout--heading">La palette du goût</p>
-                            <p class="nav__gout--byline">Menu</p>
+                    <li class="menu__gout">
+                        <a href="./gout.html" class="menu__link">
+                            <p class="menu__gout-heading">La palette du goût</p>
+                            <p class="menu__gout-byline">Menu</p>
                         </a>
                     </li>
                 </ul>
 
             </nav>
 
-            <div class="btn">
-                <button>Prochainement...</button>
-            </div>
+            <button class="main__btn">
+                Prochainement...
+            </button>
 
         </main>
 
-        <footer>
-            <div class="footer__mentions">
-                <a href="./mentions_legales.html">Mentions légales</a>
-            </div>
-            <div class="footer__contact">
-                <a href="mailto:dhcontrole@gmail.com">Contactez-nous</a>
-            </div>
+        <footer class="footer">
+            <ul class="footer__nav">
+                <li class="footer__nav-mentions">
+                    <a href="./mentions-legales.html" class="footer__link">Mentions légales</a>
+                </li>
+                <li class="footer__nav-contact">
+                    <a href="mailto:dhcontrole@gmail.com" class="footer__link">Contactez-nous</a>
+                </li>
+            </ul>
         </footer>
 
     </div>

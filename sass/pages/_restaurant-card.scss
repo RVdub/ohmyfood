@@ -1,0 +1,194 @@
+/*Menu Card Restaurant Pages*/
+.card {
+    margin: 8em 10em 12em 10em;
+}
+
+.card__caption {
+    font-size: 4em;
+    color: $color-caption;
+    padding-bottom: 1em;
+        @media screen and (max-width: map-get($breakpoints, xs)) {
+        font-size: 2em;
+        }
+}
+
+@each $key, $value in $bg-menu {
+    .card__figure--#{$key} {
+    margin: auto;
+    box-shadow: 0 0 1.5em $color-boxshadow;
+    background-color: $value;
+    }
+}
+
+.card__heading {
+    &--first {
+    font-family: 'Devonshire', cursive;
+    color: $color-fst-card;
+    font-size: 6em;
+    padding-top: 2em;
+        @media screen and (max-width: map-get($breakpoints, xs)) {
+            font-size: 3em;
+        }
+    }
+    &--second {
+        font-family: 'Redressed', cursive;
+        font-size: 7em;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        @include gradient ($color1: $color-sd-card-heading1, $color2: $color-sd-card-heading2);
+            @media screen and (max-width: map-get($breakpoints, xs)) {
+            font-size: 4em;
+            } 
+    }
+    &--third {
+        font-family: 'Dancing Script', cursive;
+        font-size: 10em;
+        padding-top: 1em;
+        padding-bottom: .3em;
+        @include gradient ($color1: $color-td-card-heading1, $color2: $color-td-card-heading2);
+            @media screen and (max-width: map-get($breakpoints, xs)) {
+            font-size: 3em;
+            }
+    }
+    &--fourth {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 10em;
+        padding-top: 1em;
+        padding-bottom: .3em;
+        @include gradient ($color1: $color-fth-card-heading1, $color2: $color-fth-card-heading2);
+            @media screen and (max-width: map-get($breakpoints, xs)) {
+            font-size: 3em;
+            }
+    }
+}
+
+.card__content {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+        @media screen and (max-width: map-get($breakpoints, xs)) {
+        font-size: 1em;
+        }
+    &--first {
+        font-family: 'Itim', cursive;
+        color: $color-fst-card;
+    }
+    &--third {
+        font-family: 'Itim', cursive;
+        color: $color-caption;
+    }
+    &--fourth {
+        font-family: 'Itim', cursive;
+        color: $color-caption;
+    }
+}
+
+.card__block {
+    display: flex;
+    flex-direction: column;
+    &--color-entry {
+        color: $color-sd-entry;
+    }
+    &--color-maindish {
+        color: $color-sd-maindish;
+    }
+    &--color-dessert {
+        color: $color-sd-dessert;
+    }
+}
+
+.card__title {
+    padding-top: 2em;  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    &--first {
+        padding-bottom: 1em;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    &--second {
+        padding-bottom: 1.5em;
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+    &--third {
+        padding-bottom: 1.5em;
+        font-weight: normal;
+        font-size: 1.5em;
+    }
+    &--fourth {
+        padding-bottom: 1.5em;
+        font-weight: normal;
+        font-size: 1.5em;
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+}
+
+.card__title-img {
+    padding-top: .3em;
+    max-width : 100%;
+    height: auto;
+    @media screen and (max-width: map-get($breakpoints, xxs)) {
+        max-width: 0%;
+    }
+}
+
+.card__line {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    @media screen and (max-width: map-get($breakpoints, xs)) {
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+    }
+    &--second {
+        padding-left: 4em;
+        padding-right: 4em;
+        font-size: 1.2em;
+    }
+    &--third {
+        padding-left: 4em;
+        padding-right: 4em;
+        font-size: 1.2em;
+    }
+    &--fourth {
+        padding-left: 6em;
+        padding-right: 6em;
+        font-size: 1.2em;
+    }
+}
+
+.card__line-cost {
+    &--first {
+        font-weight: bold;
+    }
+    &--second {
+        font-weight: normal;
+        font-size: 1.2em;
+    }
+    &--third {
+        font-weight: normal;
+        font-size: 1.4em;
+    }
+    &--fourth {
+        font-weight: normal;
+        font-size: 1.4em;
+    }
+}
+
+.card__footer {
+    font-size: 4em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    &--first {
+        font-family: 'Devonshire', cursive;
+        color: $color-fst-card;
+        @media screen and (max-width: map-get($breakpoints, xs)) {
+        font-size: 2em;
+        }
+    }
+}
+
+

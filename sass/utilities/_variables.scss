@@ -1,0 +1,28 @@
+$breakpoints: (sm: 700px, xs: 610px, xxs: 380px);
+
+
+$color-headfoot: rgb(253,203,70);
+$bg-headfoot: rgb(87,156,135);
+
+$bg-menu: (first:rgb(252,223,219), second:rgb(255,245,254), third:rgb(237,239,239), fourth:rgb(253,255,253));
+$color-boxshadow: rgb(200,200,200);
+
+$color-icon1: rgb(240,74,94);
+$color-icon2: rgb(247,143,106);
+
+$color-fst-card: rgb(60,18,24);
+$color-sd-card-heading1: rgb(198,116,18);
+$color-sd-card-heading2: rgb(110,76,204);
+$color-td-card-heading1: rgb(2,40,221);
+$color-td-card-heading2: rgb(34,157,249);
+$color-fth-card-heading1: rgb(65,150,60);
+$color-fth-card-heading2: rgb(202,252,156);
+$color-fth-card-byline: rgb(114,191,86);
+
+$color-caption: black;
+
+$color-sd-entry: $color-sd-card-heading1;
+$color-sd-maindish: rgb(165,103,153);
+$color-sd-dessert: $color-sd-card-heading2;
+
+

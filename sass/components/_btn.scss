@@ -1,0 +1,23 @@
+/*Soon button on bottom home page*/
+.main__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border-style: none;
+    margin-top: 3em;
+    padding: .5em 0;
+    font-size: 3em;
+    letter-spacing: 3px;
+    color: $color-headfoot;
+    background-color: $bg-headfoot;
+    border-radius: .5em;
+    min-width: 60%;
+    @media screen and (max-width: map-get($breakpoints,sm)) {
+        letter-spacing: 0px;
+        font-size: 2em;
+    }
+}
+
+

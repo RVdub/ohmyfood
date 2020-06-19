@@ -1,402 +1,429 @@
-/*reset*/
 *, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
-  
+
 html {
-    font-size: 62.5%;
-    font-size: calc(1em * .625); /* IE9-IE11 math fixing */
-}
-    
-body {
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    text-align: center;
+  font-size: 62.5%;
+  font-size: calc(1em * .625);
+  /* IE9-IE11 math fixing */
 }
 
-strong {
-    font-size: 1.5em;
-}
-
-/*page index*/  
-header {
-    font-size: 3em;
-    color: rgb(253, 203, 70);
-    background-color: rgb(87,156,135);
-    padding: 1em;
+.page {
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(253, 203, 70);
-}
-  
-main {
-    margin: 8em 10em 10em 10em;
+  text-decoration: none;
+  color: #fdcb46;
 }
 
-nav ul {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 6em;
-    row-gap: 6em;
-    grid-auto-rows: 70em;
+ul {
+  list-style-type: none;
 }
 
+/* Icon on first Card Menu */
+.icon-card-first {
+  font-size: 1.7em;
+  background: linear-gradient(to bottom right, #f04a5e, #f78f6a);
+  background-clip: text;
+  color: transparent;
+}
+
+/*Soon button on bottom home page*/
+.main__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  border-style: none;
+  margin-top: 3em;
+  padding: 0.5em 0;
+  font-size: 3em;
+  letter-spacing: 3px;
+  color: #fdcb46;
+  background-color: #579c87;
+  border-radius: 0.5em;
+  min-width: 60%;
+}
 @media screen and (max-width: 700px) {
-    nav ul {
-        grid-template-columns: 1fr;
-    }
-}
-
-.nav__enchantee {
-    padding-top: 5em;
-    font-size: 4em; 
-    background-color: rgb(252, 223, 219);
-    box-shadow: 0 0 .5em rgb(200, 200, 200);
-}
-
-ul li i {
-    /*gradient icon*/
-    font-size: 1.7em;
-    background: -webkit-gradient(linear, left top, right top, from(rgb(240,74,94)), to(rgb(247,143,106)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.nav__enchantee--heading {
-    font-family: 'Devonshire', cursive;
-    color: rgb(60,18,24);
-}
-
-.nav__enchantee--byline {
-    font-family: 'Sriracha', cursive;
-    font-size: 1.4em; 
-    color: rgb(60,18,24);
-    padding-top: .3em;
-}
-
-.nav__francais {
-    padding-top: 5.5em;
-    font-size: 4em;
-    background-color: rgb(255, 245, 254);
-    box-shadow: 0 0 .5em rgb(200, 200, 200);
-}
-
-.nav__francais--heading {
-    font-family: 'Redressed', cursive;
-    font-size: 1em;
-    background: -webkit-gradient(linear, left top, right bottom, from(rgb(227,138,18)), to(rgb(143,90,255)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.nav__francais--byline {
-    font-family: 'Noto Serif', serif;
-    font-size: 1.3em;
-    padding-top: .5em;
-    color: rgb(227, 138, 18)
-}
-
-.nav__papilles {
-    padding-top: 6em;
-    font-size: 4em;
-    background-color: rgb(237, 239, 239);
-    box-shadow: 0 0 .5em rgb(200, 200, 200);
-}
-
-.nav__papilles--heading {
-    font-family: 'Dancing Script', cursive;
-    background: -webkit-gradient(linear, left top, right top, from(rgb(4,49,223)), to(rgb(8, 135, 251)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.nav__papilles--byline {
-    font-family: 'Handlee', cursive;
-    font-size: 1.3em;
-    padding-top: .5em;
-    color: rgb(8, 135, 251);
-}
-
-.nav__gout {
-    padding-top: 6em;
-    font-size: 4em;
-    background-color: rgb(253, 255, 253);
-    box-shadow: 0 0 .5em rgb(200, 200, 200);
-}
-
-.nav__gout--heading {
-    font-family: 'Kaushan Script', cursive;
-    background: -webkit-gradient(linear, left top, right top, from(rgb(66,151,60)), to(rgb(191,255,126)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.nav__gout--byline {
-    font-family: 'Handlee', cursive;
-    font-size: 1.3em;
-    padding-top: .5em;
-    color: rgb(114, 191, 86)
-}
-
-nav a {
-    text-decoration: none;
-}
-
-.btn {
-    display: flex;
-    justify-content: center;
-}
-
-button {
-    border: 0;
-    margin-top: 3em;
-    padding: .5em 0;
-    font-size: 3em;
-    letter-spacing: 3px;
-    color: rgb(253, 203, 70);
-    background-color: rgb(87,156,135);
-    border-radius: .5em;
-    min-width: 60%;
-}
-
-@media screen and (max-width: 700px) {
-    button {
-        letter-spacing: 0px;
-        font-size: 2em;
-    }
-}
-
-footer {  
-    font-size: 2.5em;
-    color: rgb(253, 203, 70);
-    background-color: rgb(87,156,135);
-    display: flex;
-    justify-content: space-between;
-    padding: .5em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/*pages menu*/
-
-figcaption {
-    font-size: 4em;
-    color: black;
-    padding-bottom: 1em;
-}
-
-.cartemenu--enchantee {
-    background-color: rgb(252, 223, 219);
-    box-shadow: 0 0 1.5em rgb(200, 200, 200);
-    margin: auto;
-}
-
-.cartemenu--enchantee i {
-    /*gradient icon*/
-    font-size: 1.7em;
-    background: -webkit-gradient(linear, left top, right top, from(rgb(240,74,94)), to(rgb(247,143,106)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.cartemenu--francais {
-    background-color: rgb(255, 245, 254);
-    box-shadow: 0 0 1.5em rgb(200, 200, 200);
-    margin: auto;
-}
-
-.cartemenu--papilles {
-    background-color: rgb(237, 239, 239);
-    box-shadow: 0 0 1.5em rgb(200, 200, 200);
-    margin: auto;
-}
-
-.cartemenu--gout {
-    background-color: rgb(253, 255, 253);
-    box-shadow: 0 0 1.5em rgb(200, 200, 200);
-    margin: auto;
-}
-
-.carte__heading--enchantee {
-    font-family: 'Devonshire', cursive;
-    color: rgb(60,18,24);
-    font-size: 5em;
-    padding-top: 2em;
-}
-
-.carte__heading--francais {
-    font-family: 'Redressed', cursive;
-    background: -webkit-gradient(linear, left top, right bottom, from(rgb(227,138,18)), to(rgb(143,90,255)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 7em;
-    padding-top: 2em;
-    padding-bottom: 1em;
-}
-
-.carte__heading--papilles {
-    font-family: 'Dancing Script', cursive;
-    background: -webkit-gradient(linear, left top, right top, from(rgb(4,49,223)), to(rgb(8, 135, 251)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 10em;
-    padding-top: 1em;
-    padding-bottom: .3em;
-}
-
-.carte__heading--gout {
-    font-family: 'Kaushan Script', cursive;
-    background: -webkit-gradient(linear, left top, right top, from(rgb(66,151,60)), to(rgb(191,255,126)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 10em;
-    padding-top: 1em;
-    padding-bottom: .3em;
-}
-
-.corpus {
-    display: flex;
-    justify-content: center;
+  .button {
+    letter-spacing: 0px;
     font-size: 2em;
+  }
 }
 
-@media screen and (max-width: 400px) {
-    .corpus {
-        font-size: 1em;
-    }
+.header {
+  font-size: 3em;
+  color: #fdcb46;
+  background-color: #579c87;
+  padding: 1em;
 }
 
-.corpus--enchantee {
-    font-family: 'Itim', cursive;
-    color: rgb(60,18,24);
+.footer {
+  font-size: 2.5em;
+  color: #fdcb46;
+  background-color: #579c87;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  padding: 0.5em 1em;
+  width: 100%;
+}
+@media screen and (max-width: 610px) {
+  .footer {
+    font-size: 1.5em;
+  }
 }
 
-.corpus--papilles {
-    font-family: 'Itim', cursive;
-    color: black;
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.corpus--gout {
-    font-family: 'Itim', cursive;
-    color: black;
+/*home page and nav*/
+.main {
+  margin: 8em 10em 10em 10em;
 }
 
-.corpus__menu {
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6em;
+  row-gap: 6em;
+  grid-auto-rows: 70em;
+}
+@media screen and (max-width: 700px) {
+  .menu {
+    grid-template-columns: 1fr;
+  }
+}
+
+.menu__first {
+  font-size: 4em;
+  box-shadow: 0 0 0.5em #c8c8c8;
+  padding-top: 5em;
+  background-color: #fcdfdb;
+}
+
+.menu__first-heading {
+  font-family: "Devonshire", cursive;
+  color: #3c1218;
+}
+
+.menu__first-byline {
+  font-family: "Sriracha", cursive;
+  font-size: 1.4em;
+  color: #3c1218;
+  padding-top: 0.3em;
+}
+
+.menu__second {
+  font-size: 4em;
+  box-shadow: 0 0 0.5em #c8c8c8;
+  padding-top: 5.5em;
+  background-color: #fff5fe;
+}
+
+.menu__second-heading {
+  font-family: "Redressed", cursive;
+  font-size: 1em;
+  background: linear-gradient(to bottom right, #c67412, #6e4ccc);
+  background-clip: text;
+  color: transparent;
+}
+
+.menu__second-byline {
+  font-family: "Noto Serif", serif;
+  font-size: 1.3em;
+  padding-top: 0.5em;
+  color: #c67412;
+}
+
+.menu__third {
+  font-size: 4em;
+  box-shadow: 0 0 0.5em #c8c8c8;
+  padding-top: 6em;
+  background-color: #edefef;
+}
+
+.menu__third-heading {
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to bottom right, #0228dd, #229df9);
+  background-clip: text;
+  color: transparent;
+}
+
+.menu__third-byline {
+  font-family: "Handlee", cursive;
+  font-size: 1.3em;
+  padding-top: 0.5em;
+  color: #229df9;
+}
+
+.menu__fourth {
+  font-size: 4em;
+  box-shadow: 0 0 0.5em #c8c8c8;
+  padding-top: 6em;
+  background-color: #fdfffd;
+}
+
+.menu__fourth-heading {
+  font-family: "Kaushan Script", cursive;
+  background: linear-gradient(to bottom right, #41963c, #cafc9c);
+  background-clip: text;
+  color: transparent;
+}
+
+.menu__fourth-byline {
+  font-family: "Handlee", cursive;
+  font-size: 1.3em;
+  padding-top: 0.5em;
+  color: #72bf56;
+}
+
+/*Menu Card Restaurant Pages*/
+.card {
+  margin: 8em 10em 12em 10em;
+}
+
+.card__caption {
+  font-size: 4em;
+  color: black;
+  padding-bottom: 1em;
+}
+@media screen and (max-width: 610px) {
+  .card__caption {
+    font-size: 2em;
+  }
+}
+
+.card__figure--first {
+  margin: auto;
+  box-shadow: 0 0 1.5em #c8c8c8;
+  background-color: #fcdfdb;
+}
+
+.card__figure--second {
+  margin: auto;
+  box-shadow: 0 0 1.5em #c8c8c8;
+  background-color: #fff5fe;
+}
+
+.card__figure--third {
+  margin: auto;
+  box-shadow: 0 0 1.5em #c8c8c8;
+  background-color: #edefef;
+}
+
+.card__figure--fourth {
+  margin: auto;
+  box-shadow: 0 0 1.5em #c8c8c8;
+  background-color: #fdfffd;
+}
+
+.card__heading--first {
+  font-family: "Devonshire", cursive;
+  color: #3c1218;
+  font-size: 6em;
+  padding-top: 2em;
+}
+@media screen and (max-width: 610px) {
+  .card__heading--first {
+    font-size: 3em;
+  }
+}
+.card__heading--second {
+  font-family: "Redressed", cursive;
+  font-size: 7em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  background: linear-gradient(to bottom right, #c67412, #6e4ccc);
+  background-clip: text;
+  color: transparent;
+}
+@media screen and (max-width: 610px) {
+  .card__heading--second {
+    font-size: 4em;
+  }
+}
+.card__heading--third {
+  font-family: "Dancing Script", cursive;
+  font-size: 10em;
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+  background: linear-gradient(to bottom right, #0228dd, #229df9);
+  background-clip: text;
+  color: transparent;
+}
+@media screen and (max-width: 610px) {
+  .card__heading--third {
+    font-size: 3em;
+  }
+}
+.card__heading--fourth {
+  font-family: "Kaushan Script", cursive;
+  font-size: 10em;
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+  background: linear-gradient(to bottom right, #41963c, #cafc9c);
+  background-clip: text;
+  color: transparent;
+}
+@media screen and (max-width: 610px) {
+  .card__heading--fourth {
+    font-size: 3em;
+  }
+}
+
+.card__content {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+}
+@media screen and (max-width: 610px) {
+  .card__content {
+    font-size: 1em;
+  }
+}
+.card__content--first {
+  font-family: "Itim", cursive;
+  color: #3c1218;
+}
+.card__content--third {
+  font-family: "Itim", cursive;
+  color: black;
+}
+.card__content--fourth {
+  font-family: "Itim", cursive;
+  color: black;
+}
+
+.card__block {
+  display: flex;
+  flex-direction: column;
+}
+.card__block--color-entry {
+  color: #c67412;
+}
+.card__block--color-maindish {
+  color: #a56799;
+}
+.card__block--color-dessert {
+  color: #6e4ccc;
+}
+
+.card__title {
+  padding-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card__title--first {
+  padding-bottom: 1em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.card__title--second {
+  padding-bottom: 1.5em;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.card__title--third {
+  padding-bottom: 1.5em;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+.card__title--fourth {
+  padding-bottom: 1.5em;
+  font-weight: normal;
+  font-size: 1.5em;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.card__title-img {
+  padding-top: 0.3em;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 380px) {
+  .card__title-img {
+    max-width: 0%;
+  }
+}
+
+.card__line {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+@media screen and (max-width: 610px) {
+  .card__line {
     display: flex;
     flex-direction: column;
+    font-size: 1em;
+  }
+}
+.card__line--second {
+  padding-left: 4em;
+  padding-right: 4em;
+  font-size: 1.2em;
+}
+.card__line--third {
+  padding-left: 4em;
+  padding-right: 4em;
+  font-size: 1.2em;
+}
+.card__line--fourth {
+  padding-left: 6em;
+  padding-right: 6em;
+  font-size: 1.2em;
 }
 
-.corpus__menu--color1 {
-    color: rgb(198,116,18);
+.card__line-cost--first {
+  font-weight: bold;
+}
+.card__line-cost--second {
+  font-weight: normal;
+  font-size: 1.2em;
+}
+.card__line-cost--third {
+  font-weight: normal;
+  font-size: 1.4em;
+}
+.card__line-cost--fourth {
+  font-weight: normal;
+  font-size: 1.4em;
 }
 
-.corpus__menu--color2 {
-    color: rgb(165,103,153);
+.card__footer {
+  font-size: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.card__footer--first {
+  font-family: "Devonshire", cursive;
+  color: #3c1218;
+}
+@media screen and (max-width: 610px) {
+  .card__footer--first {
+    font-size: 2em;
+  }
 }
 
-.corpus__menu--color3 {
-    color: rgb(110,76,204);
+/*Legal Notice Minimum style*/
+.legal__typo {
+  font-size: 1.2em;
 }
 
-.corpus__heading {
-    padding-top: 2em;  
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.legal__h2 {
+  font-weight: bold;
 }
 
-.corpus__heading--enchantee {
-    padding-bottom: 1em;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.corpus__heading--francais {
-    padding-bottom: 1.5em;
-    font-weight: bold;
-    font-size: 1.4em;
-}
-
-.corpus__heading--papilles {
-    padding-bottom: 1.5em;
-    font-weight: normal;
-    font-size: 1.5em;
-}
-
-.corpus__heading--gout {
-    padding-bottom: 1.5em;
-    font-weight: normal;
-    font-size: 1.5em;
-    padding-right: 2em;
-    padding-left: 2em;
-}
-
-.corpus__heading img {
-    padding-top: .3em;
-    max-width : 100%;
-    height: auto;
-}
-
-.corpus__line {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 1em;
-}
-
-.corpus__line em {
-    font-weight: bold;
-}
-
-.corpus__line--francais {
-    padding-left: 4em;
-    padding-right: 4em;
-}
-
-.corpus__line--francais em {
-    font-weight: normal;
-    font-size: 1.2em;
-}
-
-.corpus__line--papilles {
-    padding-left: 4em;
-    padding-right: 4em;
-    font-size: 1.2em;
-}
-
-.corpus__line--papilles em {
-    font-weight: normal;
-    font-size: 1.4em;
-}
-
-.corpus__line--gout {
-    padding-left: 6em;
-    padding-right: 6em;
-    font-size: 1.2em;
-}
-
-.corpus__line--gout em {
-    font-weight: normal;
-    font-size: 1.4em;
-}
-
-.carte__footer {
-    font-size: 4em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-.carte__footer--enchantee {
-    font-family: 'Devonshire', cursive;
-}
-
-p+i+em {
-    color: rgb(60,18,24);
-}
-
+/*# sourceMappingURL=style.css.map */

@@ -134,6 +134,13 @@
     }
 }
 
+@each $key,$value in $color-underligne {
+    .card__title-text--#{$key} {
+        justify-self: center;
+        @include underligne-animation ($color: $value);
+    }
+}
+
 .card__line {
     display: flex;
     justify-content: space-between;

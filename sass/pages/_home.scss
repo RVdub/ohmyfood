@@ -8,7 +8,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 6em;
     row-gap: 6em;
-    grid-auto-rows: 70em;
+    grid-auto-rows: 70em;    
     @media screen and (max-width: map-get($breakpoints, sm)) {
         grid-template-columns: 1fr;
     }
@@ -17,7 +17,11 @@
 .menu__first {
     @include menu;
     padding-top: 5em;
-    background-color: map-get($bg-menu, first);    
+    background-color: map-get($bg-menu, first);
+}
+
+.menu__animation {
+    @include menu-animation;
 }
 
 .menu__first-heading {
@@ -85,6 +89,10 @@
     font-size: 1.3em;
     padding-top: .5em;
     color: $color-fth-card-byline;
+}
+
+.button {
+    @include ellipsis-animation;
 }
 
 

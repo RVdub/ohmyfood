@@ -24,59 +24,71 @@
 
 </head>
 
-<body>
-    <div class="container">
-        <header>
-            <a href="./index.html">
-                <h1>ohmyfood</h1>
+<body class="page">
+    <div class="page__wrapper">
+        <header class="header">
+            <a href="./index.html" class="header__link">
+                <h1 class="header__logo">ohmyfood</h1>
             </a>
         </header>
 
-        <main>
-            <nav>
-                <ul>
-                    <li class="nav__enchantee">
-                        <a href="./menu_enchantee.html">
-                            <i class="fas fa-music"></i>
-                            <p class="nav__enchantee--heading">La note enchantée</p>
-                            <p class="nav__enchantee--byline">MENU</p>
-                        </a>
+        <main class="main">
+            <nav class="main__nav">
+                <ul class="menu">
+                    <li class="menu__first">
+                        <div class="menu__animation">
+                            <a href="./first-card.html" class="menu__link">
+                                <i class="icon-card-first fas fa-music"></i>
+                                <p class="menu__first-heading">La note enchantée</p>
+                                <p class="menu__first-byline">MENU</p>
+                            </a>
+                        </div>
                     </li>
-                    <li class="nav__francais">
-                        <a href="./menu_francais.html">
-                            <p class="nav__francais--heading">Le chic à la française</p>
-                            <p class="nav__francais--byline">Menu</p>
-                        </a>
+                    <li class="menu__second">
+                        <div class="menu__animation">
+                            <a href="./second-card.html" class="menu__link">
+                                <p class="menu__second-heading">Le chic à la française</p>
+                                <p class="menu__second-byline">Menu</p>
+                            </a>
+                        </div>
                     </li>
-                    <li class="nav__papilles">
-                        <a href="./menu_papilles.html">
-                            <p class="nav__papilles--heading">Le délice des papilles</p>
-                            <p class="nav__papilles--byline">Menu</p>
-                        </a>
+                    <li class="menu__third">
+                        <div class="menu__animation">
+                            <a href="./third-card.html" class="menu__link">
+                                <p class="menu__third-heading">Le délice des papilles</p>
+                                <p class="menu__third-byline">Menu</p>
+                            </a>
+                        </div>
                     </li>
-                    <li class="nav__gout">
-                        <a href="./menu_gout.html">
-                            <p class="nav__gout--heading">La palette du goût</p>
-                            <p class="nav__gout--byline">Menu</p>
-                        </a>
+                    <li class="menu__fourth">
+                        <div class="menu__animation">
+                            <a href="./fourth-card.html" class="menu__link">
+                                <p class="menu__fourth-heading">La palette du goût</p>
+                                <p class="menu__fourth-byline">Menu</p>
+                            </a>
+                        </div>
                     </li>
                 </ul>
 
             </nav>
 
-            <div class="btn">
-                <button>Prochainement...</button>
+            <div class="main__btn">
+                <button class="button">
+                    Prochainement
+                </button>
             </div>
 
         </main>
 
-        <footer>
-            <div class="footer__mentions">
-                <a href="./mentions_legales.html">Mentions légales</a>
-            </div>
-            <div class="footer__contact">
-                <a href="mailto:dhcontrole@gmail.com">Contactez-nous</a>
-            </div>
+        <footer class="footer">
+            <ul class="footer__nav">
+                <li class="footer__nav-mentions">
+                    <a href="./legal-notice.html" class="footer__link">Mentions légales</a>
+                </li>
+                <li class="footer__nav-contact">
+                    <a href="mailto:dhcontrole@gmail.com" class="footer__link">Contactez-nous</a>
+                </li>
+            </ul>
         </footer>
 
     </div>

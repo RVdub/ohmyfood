@@ -1,0 +1,77 @@
+@mixin menu-animation {
+    transition: transform 450ms, opacity 300ms 150ms;
+    &:hover {
+        transform: scale(2);
+        opacity: .1;
+    }    
+}
+
+@mixin underligne-animation ($color) {
+    position: relative;
+    width: max-content;
+    cursor: pointer;
+    &::after {
+        content: "";
+        background-color: $color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        opacity: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 800ms linear;
+    }
+    &:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+    }
+}
+
+@mixin wiggle-effect {
+    &:hover {
+      transform: translateX(0);
+      animation: wiggle 800ms cubic-bezier(.4,0,.2,1);
+    }
+}
+
+@keyframes wiggle {
+    10%, 90% {
+      transform: translateX(-1px);
+    }
+  
+    20%, 80% {
+      transform: translateX(2px);  
+    }
+
+    30%, 50%, 70% {
+      transform: translateX(-4px);
+    }
+
+    40%, 60% {
+      transform: translateX(4px);
+    }
+}
+
+@mixin ellipsis-animation {
+    &::after {
+        content: "";
+        animation: ellipsis 2s infinite;
+    }
+}
+
+@keyframes ellipsis {
+    0%,
+    20% {
+      content: ".";
+    }
+    40% {
+      content: "..";
+    }
+    80% {
+      content: "...";
+    }
+}
+
+

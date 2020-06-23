@@ -1,0 +1,80 @@
+/*home page and nav*/
+.main {
+    margin: 8em 10em 10em 10em;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6em;
+    row-gap: 6em;
+    grid-auto-rows: 70em;
+    @media screen and (max-width: map-get($breakpoints, sm)) {
+        grid-template-columns: 1fr;
+    }
+    &__first {
+        @include menu;
+        padding-top: 5em;
+        background-color: map-get($bg-menu, first);
+        &-heading {
+            font-family: 'Devonshire', cursive;
+            color: $color-fst-card;
+        }
+        &-byline {
+            font-family: 'Sriracha', cursive;
+            font-size: 1.4em; 
+            color: $color-fst-card;
+            padding-top: .3em;
+        }
+    }
+    &__second {
+        @include menu;
+        padding-top: 5.5em;
+        background-color: map-get($bg-menu, second);
+        &-heading {
+            font-family: 'Redressed', cursive;
+            font-size: 1em;
+            @include gradient ($color1: $color-sd-card-heading1, $color2: $color-sd-card-heading2);
+        }
+        &-byline {
+            font-family: 'Noto Serif', serif;
+            font-size: 1.3em;
+            padding-top: .5em;
+            color: $color-sd-card-heading1;
+        }
+    }
+    &__third {
+        @include menu;
+        padding-top: 6em;
+        background-color: map-get($bg-menu, third);
+        &-heading {
+            font-family: 'Dancing Script', cursive;
+            @include gradient ($color1: $color-td-card-heading1, $color2: $color-td-card-heading2);
+        }
+        &-byline {
+            font-family: 'Handlee', cursive;
+            font-size: 1.3em;
+            padding-top: .5em;
+            color: $color-td-card-heading2;
+        }
+    }
+    &__fourth {
+        @include menu;
+        padding-top: 6em;
+        background-color: map-get($bg-menu, fourth);
+        &-heading {
+            font-family: 'Kaushan Script', cursive;
+            @include gradient ($color1: $color-fth-card-heading1, $color2: $color-fth-card-heading2);
+        }
+        &-byline {
+            font-family: 'Handlee', cursive;
+            font-size: 1.3em;
+            padding-top: .5em;
+            color: $color-fth-card-byline;
+        }
+    }
+    &__animation {
+        @include menu-animation;
+    }
+}
+

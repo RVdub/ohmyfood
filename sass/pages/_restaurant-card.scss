@@ -1,15 +1,14 @@
 /*Menu Card Restaurant Pages*/
 .card {
     margin: 8em 10em 12em 10em;
-}
-
-.card__caption {
-    font-size: 4em;
-    color: $color-caption;
-    padding-bottom: 1em;
+    &__caption {
+        font-size: 4em;
+        color: $color-caption;
+        padding-bottom: 1em;
         @media screen and (max-width: map-get($breakpoints, xs)) {
-        font-size: 2em;
+            font-size: 2em;
         }
+    }
 }
 
 @each $key, $value in $bg-menu {
@@ -21,7 +20,7 @@
 }
 
 .card__heading {
-    &--first {
+    &-first {
     font-family: 'Devonshire', cursive;
     color: $color-fst-card;
     font-size: 6em;
@@ -30,7 +29,7 @@
             font-size: 3em;
         }
     }
-    &--second {
+    &-second {
         font-family: 'Redressed', cursive;
         font-size: 7em;
         padding-top: 2em;
@@ -40,7 +39,7 @@
             font-size: 4em;
             } 
     }
-    &--third {
+    &-third {
         font-family: 'Dancing Script', cursive;
         font-size: 10em;
         padding-top: 1em;
@@ -50,7 +49,7 @@
             font-size: 3em;
             }
     }
-    &--fourth {
+    &-fourth {
         font-family: 'Kaushan Script', cursive;
         font-size: 10em;
         padding-top: 1em;
@@ -66,9 +65,9 @@
     display: flex;
     justify-content: center;
     font-size: 2em;
-        @media screen and (max-width: map-get($breakpoints, xs)) {
+    @media screen and (max-width: map-get($breakpoints, xs)) {
         font-size: 1em;
-        }
+    }
     &--first {
         font-family: 'Itim', cursive;
         color: $color-fst-card;
@@ -101,6 +100,7 @@
     padding-top: 2em;  
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    font-weight: normal;
     &--first {
         padding-bottom: 1em;
         font-weight: bold;
@@ -113,12 +113,10 @@
     }
     &--third {
         padding-bottom: 1.5em;
-        font-weight: normal;
         font-size: 1.5em;
     }
     &--fourth {
         padding-bottom: 1.5em;
-        font-weight: normal;
         font-size: 1.5em;
         padding-right: 2em;
         padding-left: 2em;
@@ -145,6 +143,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 1em;
+    font-weight: normal;
     @media screen and (max-width: map-get($breakpoints, xs)) {
         display: flex;
         flex-direction: column;
@@ -165,22 +164,16 @@
         padding-right: 6em;
         font-size: 1.2em;
     }
-}
-
-.card__line-cost {
-    &--first {
+    &-cost--first {
         font-weight: bold;
     }
-    &--second {
-        font-weight: normal;
+    &-cost--second {
         font-size: 1.2em;
     }
-    &--third {
-        font-weight: normal;
+    &-cost--third {
         font-size: 1.4em;
     }
-    &--fourth {
-        font-weight: normal;
+    &-cost--fourth {
         font-size: 1.4em;
     }
 }

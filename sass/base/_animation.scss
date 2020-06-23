@@ -9,6 +9,7 @@
 @mixin underligne-animation ($color) {
     position: relative;
     width: max-content;
+    cursor: pointer;
     &::after {
         content: "";
         background-color: $color;

@@ -18,6 +18,9 @@
         letter-spacing: 0px;
         font-size: 2em;
     }
+    @media screen and (max-width: map-get($breakpoints,interxs)) {
+        font-size: 1.1em;
+    }
     @include ellipsis-animation;    
 }
 

@@ -1,8 +1,8 @@
 @mixin menu-animation {
     transition: transform 450ms, opacity 300ms 150ms;
     &:hover {
-        transform: scale(2);
-        opacity: .1;
+        transform: scale(1.2);
+        opacity: .6;
     }    
 }
 
@@ -77,5 +77,3 @@
         text-shadow: 0.33em 0 0 $color-headfoot, 0.67em 0 0 $color-headfoot;
     }
 }
-
-

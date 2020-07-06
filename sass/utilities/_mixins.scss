@@ -6,8 +6,7 @@
 
 @mixin menu {
     font-size: 4em;
-    box-shadow: 0 0 .5em $color-boxshadow;
-    overflow: hidden;
     padding-left: 1em;
     padding-right: 1em;
+    padding-bottom: 10em;
 }

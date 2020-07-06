@@ -1,6 +1,9 @@
 /*Menu Card Restaurant Pages*/
 .card {
     margin: 8em 10em 12em 10em;
+    @media screen and (max-width: map-get($breakpoints, interxs)) {
+        margin: 8em 2em 12em 2em;
+    }
     &__caption {
         font-size: 4em;
         color: $color-caption;
@@ -80,9 +83,6 @@
     }
     @media screen and (max-width: map-get($breakpoints, xs)) {
         font-size: 1em;
-    }
-    @media screen and (max-width: map-get($breakpoints, xxs)) {
-        font-size: .6em;
     }
         &--first {
         font-family: 'Itim', cursive;
@@ -224,11 +224,11 @@
     font-size: 4em;
     padding-top: 2em;
     padding-bottom: 2em;
+    @media screen and (max-width: map-get($breakpoints, interxs)) {
+        font-size: 2em;
+    }
     &--first {
         font-family: 'Devonshire', cursive;
         color: $color-fst-card;
-        @media screen and (max-width: map-get($breakpoints, xs)) {
-        font-size: 2em;
-        }
     }
 }

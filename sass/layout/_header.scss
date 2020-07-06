@@ -3,4 +3,7 @@
     color: $color-headfoot;
     background-color: $bg-headfoot;
     padding: 1em;
+    @media screen and (max-width: map-get($breakpoints, xxs)) {
+        font-size: 2em;
+    }
 }
